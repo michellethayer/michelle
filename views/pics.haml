@@ -1,0 +1,14 @@
+.container
+  .row
+    .span12
+  .row
+    - 10.times do |i|
+      .span12
+        %ul.thumbnails
+          %li.span4
+            %a.thumbnail{:href => "#"}
+              %img{:alt => "", :src => "http://placehold.it/360x268"}
+            - 8.times do |i|
+              %li.span2
+                %a.thumbnail{:href => "#"}
+                  %img{:alt => "", :src => "http://placehold.it/160x120"}

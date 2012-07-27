@@ -1,0 +1,122 @@
+%script{:src => "/js/test_buttons.js"}
+
+.container.well
+  .row.buttons
+    .span12
+      .btn-toolbar
+        .btn-group
+          %button.btn#collapse Collapse Divs 
+        .btn-group
+          %button.btn#opacity Change Opacity
+        .btn-group
+          %button.btn#background Change Background
+  .row
+    - 3.times do |i|
+      .span4
+        #feed.widget.bottomless
+          .btn-toolbar
+            %h4 Check out these lil divs!
+          %ul.nav.nav-list-wt.nav-inline
+            %li
+              %i.icon-ok
+              Introduced to
+              = succeed "." do
+                %a.nav-normal{:href => "#"} Akiva Health Systems
+              %span.date May 02
+            %li
+              %i.icon-remove
+              Passed on
+              = succeed "." do
+                %a.nav-normal{:href => "#"} beRecruited
+              %span.date May 02
+            %li
+              %img{:src => "https://www.whitetruffle.com/images/feed-magic.png", :width => "14"}
+                Matched with
+                %a.nav-normal{:href => "#"} Akiva Health Systems
+                and
+                = succeed "." do
+                  %a.nav-normal{:href => "#"} beRecruited
+                %span.date May 02
+            %li
+              %i.icon-ok
+              Introduced to
+              = succeed "." do
+                %a.nav-normal{:href => "#"} Instameet
+              %span.date May 02
+            %li
+              %img{:src => "https://www.whitetruffle.com/images/feed-magic.png", :width => "14"}
+                Matched with
+                = succeed "." do
+                  %a.nav-normal{:href => "#"} Instameet
+                %span.date May 02
+            %li
+              %i.icon-star
+              %span.story You joined Whitetruffle!
+              %span.date Apr 06
+              
+  - 2.times do |i|
+    .row
+      - 2.times do |i|
+        .span6
+          %h2 i can haz icons
+          %i.icon-headphones
+          %i.icon-envelope      
+          %i.icon-tint
+          %i.icon-fire
+          %i.icon-ok-sign
+          %i.icon-camera                
+          %p.top Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+
+  .row
+    .span12
+      %ul.thumbnails
+        %li.span4
+          %a.thumbnail{:href => "#"}
+            %img{:alt => "", :src => "http://placehold.it/360x268"}
+        - 8.times do |i|
+          %li.span2
+            %a.thumbnail{:href => "#"}
+              %img{:alt => "", :src => "http://placehold.it/160x120"}
+
+  .row
+    - 3.times do |i|
+      .span4
+        - 2.times do |i|
+          %h2 buttonianz
+          .progress
+            .bar{:style => "width: 40%;"}
+          .btn-toolbar
+            .btn-group
+              %a.btn.btn-primary{:href => "#"}
+                %i.icon-user.icon-white
+                User
+              %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                %span.caret
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "#"}
+                    %i.icon-pencil
+                    Edit
+                %li
+                  %a{:href => "#"}
+                    %i.icon-trash
+                    Delete
+                %li
+                  %a{:href => "#"}
+                    %i.icon-ban-circle
+                    Ban
+                %li.divider
+                %li
+                  %a{:href => "#"}
+                    %i.i
+                    Make admin
+            .btn-group
+              %a.btn{:href => "#"}
+                %i.icon-align-left
+              %a.btn{:href => "#"}
+                %i.icon-align-center
+              %a.btn{:href => "#"}
+                %i.icon-align-right
+              %a.btn{:href => "#"}
+                %i.icon-align-justify
+          %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elite.
